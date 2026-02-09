@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- Skin gradient -->
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDDCBD"/>
+      <stop offset="50%" stop-color="#F5C7A9"/>
+      <stop offset="100%" stop-color="#E8B896"/>
+    </linearGradient>
+    
+    <!-- Hair gradient -->
+    <linearGradient id="hairGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="50%" stop-color="#C9956C"/>
+      <stop offset="100%" stop-color="#B8855C"/>
+    </linearGradient>
+    
+    <!-- Scrub gradient -->
+    <linearGradient id="scrubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5BA4C6"/>
+      <stop offset="50%" stop-color="#4A94B6"/>
+      <stop offset="100%" stop-color="#3A84A6"/>
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="mascotShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <g filter="url(#mascotShadow)">
+    <!-- Hair (back) -->
+    <ellipse cx="100" cy="55" rx="55" ry="50" fill="url(#hairGradient)"/>
+    
+    <!-- Neck -->
+    <rect x="85" y="95" width="30" height="25" fill="url(#skinGradient)"/>
+    
+    <!-- Face -->
+    <ellipse cx="100" cy="75" rx="45" ry="50" fill="url(#skinGradient)"/>
+    
+    <!-- Hair (front/bangs) -->
+    <path d="M55 55 
+             Q60 35 80 30 
+             Q100 25 120 30 
+             Q140 35 145 55
+             Q140 45 120 42
+             Q100 38 80 42
+             Q60 45 55 55" 
+          fill="url(#hairGradient)"/>
+    
+    <!-- Eyebrows -->
+    <path d="M75 62 Q85 58 95 62" stroke="#8B6914" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M105 62 Q115 58 125 62" stroke="#8B6914" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="85" cy="75" rx="10" ry="12" fill="#FFFFFF"/>
+    <ellipse cx="115" cy="75" rx="10" ry="12" fill="#FFFFFF"/>
+    
+    <!-- Iris -->
+    <ellipse cx="85" cy="76" rx="6" ry="7" fill="#5D4E37"/>
+    <ellipse cx="115" cy="76" rx="6" ry="7" fill="#5D4E37"/>
+    
+    <!-- Pupils -->
+    <ellipse cx="85" cy="76" rx="3" ry="4" fill="#2D2215"/>
+    <ellipse cx="115" cy="76" rx="3" ry="4" fill="#2D2215"/>
+    
+    <!-- Eye highlights -->
+    <ellipse cx="87" cy="74" rx="2" ry="2" fill="#FFFFFF"/>
+    <ellipse cx="117" cy="74" rx="2" ry="2" fill="#FFFFFF"/>
+    
+    <!-- Nose -->
+    <path d="M100 78 Q103 88 100 95 Q97 93 95 95" stroke="#D4A088" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- Smile -->
+    <path d="M82 105 Q100 120 118 105" stroke="#C4846A" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Cheek blush -->
+    <ellipse cx="70" cy="92" rx="10" ry="6" fill="#FFB6C1" opacity="0.3"/>
+    <ellipse cx="130" cy="92" rx="10" ry="6" fill="#FFB6C1" opacity="0.3"/>
+    
+    <!-- Scrub top -->
+    <path d="M50 120 
+             Q50 115 60 115 
+             L140 115 
+             Q150 115 150 120 
+             L150 200 
+             L50 200 
+             Z" 
+          fill="url(#scrubGradient)"/>
+    
+    <!-- Scrub collar -->
+    <path d="M85 115 L100 135 L115 115" fill="#FFFFFF" stroke="#4A94B6" stroke-width="1"/>
+    
+    <!-- Stethoscope -->
+    <ellipse cx="100" cy="155" rx="25" ry="20" fill="none" stroke="#333333" stroke-width="3"/>
+    <circle cx="100" cy="155" r="8" fill="#C0C0C0" stroke="#333333" stroke-width="2"/>
+    
+    <!-- Name badge -->
+    <rect x="130" y="140" width="35" height="25" rx="3" fill="#FFFFFF" stroke="#4A94B6" stroke-width="1.5"/>
+    <rect x="133" y="143" width="29" height="19" rx="2" fill="#5BA4C6"/>
+    <text x="147" y="156" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="bold">DR</text>
+  </g>
+</svg>

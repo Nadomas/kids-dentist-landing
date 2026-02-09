@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="brushMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8E8E8"/>
+      <stop offset="25%" stop-color="#F5F5F5"/>
+      <stop offset="50%" stop-color="#E0E0E0"/>
+      <stop offset="75%" stop-color="#D5D5D5"/>
+      <stop offset="100%" stop-color="#C8C8C8"/>
+    </linearGradient>
+    <linearGradient id="brushHandle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3A3A3A"/>
+      <stop offset="20%" stop-color="#5A5A5A"/>
+      <stop offset="50%" stop-color="#4A4A4A"/>
+      <stop offset="80%" stop-color="#5A5A5A"/>
+      <stop offset="100%" stop-color="#3A3A3A"/>
+    </linearGradient>
+    <linearGradient id="brushBristles" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B7355"/>
+      <stop offset="30%" stop-color="#A0896C"/>
+      <stop offset="70%" stop-color="#8B7355"/>
+      <stop offset="100%" stop-color="#6B5344"/>
+    </linearGradient>
+    <filter id="brushShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <g filter="url(#brushShadow)">
+    <!-- Handle -->
+    <rect x="50" y="55" width="20" height="60" rx="4" fill="url(#brushHandle)"/>
+    <!-- Handle grip texture -->
+    <line x1="54" y1="62" x2="54" y2="105" stroke="#2A2A2A" stroke-width="1.5" opacity="0.5"/>
+    <line x1="60" y1="62" x2="60" y2="105" stroke="#2A2A2A" stroke-width="1.5" opacity="0.5"/>
+    <line x1="66" y1="62" x2="66" y2="105" stroke="#2A2A2A" stroke-width="1.5" opacity="0.5"/>
+    
+    <!-- Shaft -->
+    <rect x="55" y="25" width="10" height="35" fill="url(#brushMetal)"/>
+    
+    <!-- Bristles base -->
+    <ellipse cx="60" cy="20" rx="16" ry="10" fill="url(#brushBristles)"/>
+    
+    <!-- Bristle texture -->
+    <g stroke="#5A4334" stroke-width="0.8" opacity="0.4">
+      <line x1="48" y1="16" x2="48" y2="24"/>
+      <line x1="52" y1="13" x2="52" y2="24"/>
+      <line x1="56" y1="11" x2="56" y2="24"/>
+      <line x1="60" y1="10" x2="60" y2="24"/>
+      <line x1="64" y1="11" x2="64" y2="24"/>
+      <line x1="68" y1="13" x2="68" y2="24"/>
+      <line x1="72" y1="16" x2="72" y2="24"/>
+    </g>
+    
+    <!-- Shaft shine -->
+    <line x1="58" y1="28" x2="58" y2="55" stroke="#FFFFFF" stroke-width="1" opacity="0.4"/>
+  </g>
+</svg>

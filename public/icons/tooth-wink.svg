@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="toothWinkBody" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#F8F9FA"/>
+      <stop offset="70%" stop-color="#F0F1F2"/>
+      <stop offset="100%" stop-color="#E9ECEF"/>
+    </linearGradient>
+    <linearGradient id="toothWinkHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="toothWinkGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#5BA4C6" flood-opacity="0.15"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <g filter="url(#toothWinkGlow)">
+    <!-- Main tooth shape -->
+    <path d="M60 12 
+             C42 12 25 22 22 40 
+             C20 50 24 58 28 66 
+             C31 72 34 80 37 90 
+             C40 100 46 106 60 106 
+             C74 106 80 100 83 90 
+             C86 80 89 72 92 66 
+             C96 58 100 50 98 40 
+             C95 22 78 12 60 12 Z" 
+          fill="url(#toothWinkBody)" 
+          stroke="#DDE2E6" 
+          stroke-width="1.5"/>
+    
+    <!-- Root lines -->
+    <path d="M38 90 Q36 78 32 68" stroke="#CED4DA" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M82 90 Q84 78 88 68" stroke="#CED4DA" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Wink eye (left eye open) -->
+    <ellipse cx="45" cy="48" rx="7" ry="8" fill="#3D5A80"/>
+    <ellipse cx="47" cy="46" rx="3" ry="3" fill="#FFFFFF"/>
+    
+    <!-- Wink eye (right eye closed) -->
+    <path d="M68 48 L82 48" stroke="#3D5A80" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Cheeky smile -->
+    <path d="M42 68 Q60 82 78 68" stroke="#3D5A80" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Crown highlight -->
+    <ellipse cx="45" cy="32" rx="12" ry="9" fill="url(#toothWinkHighlight)"/>
+    
+    <!-- Cheek blush -->
+    <ellipse cx="82" cy="58" rx="8" ry="5" fill="#FFB6C1" opacity="0.3"/>
+  </g>
+</svg>
