@@ -1,11 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useTranslation } from '@/lib/i18n/useTranslation'
 import { AnimatedCounter } from '@/components/ui/AnimatedCounter'
 
 export function StatsSection() {
-  const { t } = useTranslation()
 
   const stats = [
     { value: 500, suffix: '+', label: 'Довольных пациентов', icon: '/icons/tooth-happy.svg' },

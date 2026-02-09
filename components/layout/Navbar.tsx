@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from '@/lib/i18n/useTranslation'
-import { LANGUAGES } from '@/lib/constants'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { ScrollProgress } from './ScrollProgress'
 import { cn } from '@/lib/utils'
